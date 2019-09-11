@@ -13,7 +13,7 @@
 
  <body style='margin : 0px; overflow: hidden;'>
    
-  <a-scene embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled:false;'>
+  <a-scene embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled:true;' shadow="type: pcfsoft">
     
     <a-marker-camera preset='hiro'></a-marker-camera>
     
@@ -26,7 +26,7 @@
                
         ></a-entity>
     
-             <a-entity id="point_light_1" light="type: point; castShadow: false; position="0 5 5"; intensity: 3;"></a-entity>
+             <a-entity id="point_light_1" light="type: point; position="0 5 5"; intensity: 3;"></a-entity>
     
                         <a-entity camera="active: true; near: 1; far: 1000;"
 
