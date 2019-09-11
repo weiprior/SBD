@@ -3,7 +3,7 @@
 
 <head>
   <title>
-    Test 01
+    Test 001
   </title>
   <meta name="description" content="Test 01">
   <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
@@ -13,7 +13,7 @@
 
  <body style='margin : 0px; overflow: hidden;'>
    
-  <a-scene embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled:false;' shadow="type: pcfsoft">
+  <a-scene embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled:true;' shadow="type: pcfsoft">
     
     <a-marker-camera preset='hiro'></a-marker-camera>
     
@@ -26,7 +26,7 @@
                
         ></a-entity>
     
-             <a-entity light="type: point; intensity: 0.75; distance: 50; decay: 2"
+             <a-entity light="type: point; intensity: 1.75; distance: 50; decay: 2"
                        position="0 10 10"></a-entity>
     
                         <a-entity camera="active: true; near: 1; far: 1000;"
