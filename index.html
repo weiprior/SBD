@@ -15,6 +15,7 @@
    
   <a-scene embedded arjs='sourceType: webcam; debugUIEnabled:false'>
     
+    <a-marker-camera preset='hiro'></a-marker-camera>
     
         <a-entity gltf-model="assets/flower-test.gltf;" 
               
@@ -24,7 +25,11 @@
                
         ></a-entity>
     
-    <a-marker-camera preset='hiro'></a-marker-camera>
+    <a-entity camera="active: true; near: 1; far: 1000;"
+    position="0 0 0"
+    cursor="rayOrigin: mouse"
+    data-aframe-default-camera>
+</a-entity>
     
     </a-scene>
    
