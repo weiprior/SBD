@@ -13,7 +13,7 @@
 
  <body style='margin : 0px; overflow: hidden;'>
    
-  <a-scene embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled:true;' shadow="type: pcfsoft">
+  <a-scene embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled:false;' shadow="type: pcfsoft">
     
     <a-marker-camera preset='hiro'></a-marker-camera>
     
@@ -25,10 +25,12 @@
                   
                       ><a-animation attribute="position"
                             dur="8000"
+                            from="0 0 0"
                             to="1.7 1 2"
+                            to="0 0 0"       
                             dir="alternate"
                             repeat="indefinite"
-                            easing="linear"
+                            easing="easeInOutCirc"
                        ></a-animation>
 
                
@@ -42,10 +44,12 @@
                       
                       ><a-animation attribute="position"
                             dur="8000"
+                            from="0 0 0"
                             to="-0.5 0 -1"
+                            to="0 0 0" 
                             dir="alternate"
                             repeat="indefinite"
-                            easing="linear"
+                            easing="easeInOutCirc"
                        ></a-animation>
 
                
