@@ -13,17 +13,23 @@
 
  <body style='margin : 0px; overflow: hidden;'>
    
-  <a-scene embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled:false;' shadow="type: pcfsoft">
+  <a-scene embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled:true;' shadow="type: pcfsoft">
     
     <a-marker-camera preset='hiro'></a-marker-camera>
     
         <a-entity gltf-model="assets/flower-test.gltf" 
               
-               
+               rotation='0 90 -90'
                position='0 0 0'
                scale='0.01 0.01 0.01' 
                   
-               ><a-animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-animation>
+                      ><a-animation attribute="position"
+                            dur="8000"
+                            to="1.7 1 2"
+                            dir="alternate"
+                            repeat="indefinite"
+                            easing="linear"
+                       ></a-animation>
 
                
         ></a-entity>
@@ -36,8 +42,7 @@
                       
                       ><a-animation attribute="position"
                             dur="8000"
-                            from='2 1 -1'
-                            to="1.7 3 2"
+                            to="-0.5 0 -1"
                             dir="alternate"
                             repeat="indefinite"
                             easing="linear"
